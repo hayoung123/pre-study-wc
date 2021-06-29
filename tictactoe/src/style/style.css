@@ -1,0 +1,9 @@
+@import url('./reset.css');
+@import url('../index.css');
+@import url('../components/header/style.css');
+@import url('../components/score/style.css');
+
+body {
+  background-color: #5358b3;
+  color: #fff;
+}
