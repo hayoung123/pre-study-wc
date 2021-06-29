@@ -1,4 +1,4 @@
-import Observable from '../util/observer';
+import Observable from '../util/observer.js';
 
 class TurnModel extends Observable {
   constructor() {
@@ -13,3 +13,5 @@ class TurnModel extends Observable {
     this.notify(this.turn);
   }
 }
+
+export default TurnModel;

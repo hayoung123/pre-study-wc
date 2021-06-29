@@ -1,4 +1,4 @@
-import Observable from '../util/observer';
+import Observable from '../util/observer.js';
 
 class ScoreModel extends Observable {
   constructor() {
