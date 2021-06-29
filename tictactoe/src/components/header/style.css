@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  border-bottom: 2px dotted #c83aa2;
+}
