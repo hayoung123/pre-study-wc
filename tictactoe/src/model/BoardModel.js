@@ -1,4 +1,5 @@
 import Observable from '../util/observer.js';
+import { deepCloneArray } from '../util/util.js';
 
 class BoardModel extends Observable {
   constructor() {

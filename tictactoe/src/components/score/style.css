@@ -1,0 +1,27 @@
+.score__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.score {
+  display: flex;
+  position: relative;
+}
+.score__colon {
+  margin: 0 1rem;
+}
+.turn {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: yellow;
+}
+.turn__left {
+  left: -1rem;
+}
+.turn__right {
+  right: -1rem;
+}
