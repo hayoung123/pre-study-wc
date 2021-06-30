@@ -4,6 +4,8 @@ import TurnModel from './model/TurnModel.js';
 
 import Header from './components/header/Header.js';
 import Score from './components/score/Score.js';
+import Board from './components/board/Board.js';
+import GamePlayBtn from './components/GamePlayBtn/GamePlayBtn.js';
 
 class App {
   constructor() {
@@ -16,10 +18,23 @@ class App {
     this.render();
   }
   render() {
-    this.root.appendChild(new Header().$target);
-    this.root.appendChild(
-      new Score({ scoreModel: this.scoreModel, turnModel: this.turnModel }).$target
-    );
+    const header = new Header().$target;
+    const score = new Score({ scoreModel: this.scoreModel, turnModel: this.turnModel }).$target;
+    const board = new Board({
+      boardModel: this.boardModel,
+      scoreModel: this.scoreModel,
+      turnModel: this.turnModel,
+    }).$target;
+    const gamePlayBtn = new GamePlayBtn({
+      boardModel: this.boardModel,
+      scoreModel: this.scoreModel,
+      turnModel: this.turnModel,
+    }).$target;
+
+    this.root.appendChild(header);
+    this.root.appendChild(score);
+    this.root.appendChild(board);
+    this.root.appendChild(gamePlayBtn);
   }
 }
 

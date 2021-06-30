@@ -3,6 +3,7 @@
 @import url('../components/header/style.css');
 @import url('../components/score/style.css');
 @import url('../components/board/style.css');
+@import url('../components/gamePlayBtn/style.css');
 
 body {
   background-color: #5358b3;
