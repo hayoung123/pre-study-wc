@@ -1,0 +1,14 @@
+.playBtn__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.playBtns {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  font-size: 1.5rem;
+}
+.playBtn {
+  cursor: pointer;
+}
