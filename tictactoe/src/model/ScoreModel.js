@@ -8,8 +8,8 @@ class ScoreModel extends Observable {
   getScore() {
     return this.score;
   }
-  setScore(turn) {
-    this.score = { ...this.score, [turn]: this.score[turn] + 1 };
+  setScore(newScore) {
+    this.score = newScore;
     this.notify();
   }
   resetScore() {
