@@ -10,10 +10,11 @@ class ScoreModel extends Observable {
   }
   setScore(turn) {
     this.score = { ...this.score, [turn]: this.score[turn] + 1 };
-    this.notify(this.score);
+    this.notify();
   }
   resetScore() {
     this.score = { home: 0, away: 0 };
+    this.notify();
   }
 }
 

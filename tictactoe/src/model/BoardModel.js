@@ -15,10 +15,11 @@ class BoardModel extends Observable {
     const board = deepCloneArray(this.board);
     board[row][col] = mark;
     this.board = board;
-    this.notify(this.board);
+    this.notify();
   }
   resetBoard() {
     this.board = Array.from(new Array(3), (x) => new Array(3).fill(null));
+    this.notify();
   }
 }
 

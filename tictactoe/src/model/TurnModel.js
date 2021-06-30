@@ -10,7 +10,11 @@ class TurnModel extends Observable {
   }
   setTurnOver() {
     this.turn = !this.turn;
-    this.notify(this.turn);
+    this.notify();
+  }
+  resetTurn() {
+    this.turn = true;
+    this.notify();
   }
 }
 
