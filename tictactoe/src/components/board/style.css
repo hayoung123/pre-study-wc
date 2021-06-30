@@ -1,0 +1,36 @@
+.board__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.board {
+  width: 450px;
+  height: 450px;
+}
+
+.board__row {
+  display: flex;
+}
+.board__row > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: bold;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #c83aa2;
+}
+
+.board__row:first-child > div {
+  border-top: none;
+}
+.board__row:last-child > div {
+  border-bottom: none;
+}
+.board__row > div:first-child {
+  border-left: none;
+}
+.board__row > div:last-child {
+  border-right: none;
+}
