@@ -3,6 +3,7 @@ import Observable from '../util/observer.js';
 class TurnModel extends Observable {
   constructor() {
     super();
+    this.startTurn = true;
     this.turn = true; //true - HOME Ture
   }
   getTurn() {
@@ -14,6 +15,11 @@ class TurnModel extends Observable {
   }
   resetTurn() {
     this.turn = true;
+    this.notify();
+  }
+  setNewGameTurn() {
+    this.startTurn = !this.startTurn;
+    this.turn = this.startTurn;
     this.notify();
   }
 }
