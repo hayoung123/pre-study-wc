@@ -10,8 +10,7 @@ class BoardModel extends Observable {
     return this.board;
   }
   setBoard(row, col, turn) {
-    //home - 1 / away - 0
-    const mark = turn ? 1 : 0;
+    const mark = turn ? 'O' : 'X';
     const board = deepCloneArray(this.board);
     board[row][col] = mark;
     this.board = board;

@@ -10,7 +10,7 @@ class BoardSquare {
     this.$target = this.render();
   }
   render() {
-    const value = this.value === 1 ? 'O' : this.value === 0 ? 'X' : '';
+    const value = this.value ? this.value : '';
     return `<div data-row=${this.row} data-col=${this.col} class='square'>
                 ${value}
             </div>`;
