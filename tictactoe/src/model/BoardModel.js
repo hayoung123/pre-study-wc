@@ -6,14 +6,14 @@ class BoardModel extends Observable {
     super();
     this.board = Array.from(new Array(3), (x) => new Array(3).fill(null));
   }
-  getBoardState() {
+  getBoard() {
     return this.board;
   }
-  setBoardState(x, y, turn) {
+  setBoard(row, col, turn) {
     //home - 1 / away - 0
     const mark = turn ? 1 : 0;
     const board = deepCloneArray(this.board);
-    board[x][y] = mark;
+    board[row][col] = mark;
     this.board = board;
     this.notify(this.board);
   }

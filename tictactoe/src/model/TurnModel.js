@@ -5,7 +5,7 @@ class TurnModel extends Observable {
     super();
     this.turn = true; //true - HOME Ture
   }
-  getTurnState() {
+  getTurn() {
     return this.turn;
   }
   setTurnOver() {
