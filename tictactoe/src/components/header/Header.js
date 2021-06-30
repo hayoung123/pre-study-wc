@@ -7,7 +7,6 @@ class Header {
   }
   init() {
     this.$target = createElement({ tagName: 'header', className: ['header'] });
-    console.log(this.$target);
     this.render();
   }
   render() {
