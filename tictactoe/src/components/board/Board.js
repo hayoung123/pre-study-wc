@@ -34,13 +34,15 @@ class Board {
 
     return `<div class='board'>${boardElement}</div>`;
   }
-  handleClick({ target: { dataset } }) {
+  handleClick({ target: { classList, dataset } }) {
+    if (!classList.contains('square')) return;
+
     const board = this.boardModel.getBoard();
     const row = +dataset.row;
     const col = +dataset.col;
     const turn = this.turnModel.getTurn();
 
-    if (this.isFinish || board[row][col]) return;
+    if (this.isFinish || board[row][col] !== null) return;
 
     this.boardModel.setBoard(row, col, turn);
     this.turnModel.setTurnOver();

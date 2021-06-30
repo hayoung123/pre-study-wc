@@ -11,7 +11,7 @@ class BoardSquare {
   }
   render() {
     const value = this.value === 1 ? 'O' : this.value === 0 ? 'X' : '';
-    return `<div data-row=${this.row} data-col=${this.col}>
+    return `<div data-row=${this.row} data-col=${this.col} class='square'>
                 ${value}
             </div>`;
   }
