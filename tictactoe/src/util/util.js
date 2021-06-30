@@ -1,6 +1,7 @@
-export const createElement = ({ tagName = 'div', className = [] }) => {
+export const createElement = ({ tagName, className = [], value = '' }) => {
   const element = document.createElement(tagName);
   element.classList.add(...className);
+  element.innerHTML = value;
   return element;
 };
 
