@@ -14,3 +14,7 @@ input:focus {
   outline: none;
   background-color: none;
 }
+
+body {
+  font-family: 'Jua', sans-serif;
+}
